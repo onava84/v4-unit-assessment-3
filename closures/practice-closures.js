@@ -34,9 +34,9 @@ const secretString = myFunc();
 
 //CODE HERE
 function lightSwitch() {
-  const isTheLightOn = false;
+  let isTheLightOn = false;
   return function flipTheSwitch() {
-    isTheLightOn = true;
+    isTheLightOn = !isTheLightOn;
     if (isTheLightOn === true) {
       return "The light is on";
     } else {
@@ -47,12 +47,12 @@ function lightSwitch() {
 //Create a variable called kitchenSwitch whose value is the invocation of lightSwitch.
 
 //CODE HERE
-const kitchenSwitch = lightSwitch(true);
+const kitchenSwitch = lightSwitch();
 
 //Invoke kitchenSwitch.
 
 //CODE HERE
-kitchenSwitch(false);
+kitchenSwitch();
 //Create a variable called bathroomSwitch whose value is the invocation of lightSwitch.
 
 //CODE HERE
@@ -124,6 +124,7 @@ function inventory() {
 
 //CODE HERE
 let shoes = inventory();
+console.log(shoes);
 /*
     Add an item to your shoes array using the addToProducts function
   */

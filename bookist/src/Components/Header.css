@@ -1,0 +1,7 @@
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 193, 193);
+  font-weight: 800;
+}

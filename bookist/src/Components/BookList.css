@@ -1,0 +1,18 @@
+.book-list {
+  width: 180px;
+  margin: 5px;
+}
+
+.books-map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.book-image {
+  width: 170px;
+}
+
+.book-text {
+  font-size: 16px;
+}
